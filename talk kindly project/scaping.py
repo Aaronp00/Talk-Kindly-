@@ -1,30 +1,3 @@
-# import pandas as pd
-# from ntscraper import Nitter
-
-# # Create a Nitter scraper instance
-# scraper = Nitter()
-
-# value = input("Please enter a Twitter user:\n")
-
-# user = value 
-# print(f'You entered Twitter user: {user}\n')
-
-# # Define a function to get tweets from the specified user
-# def get_tweets(name, modes, no):
-#     final_tweets = []
-#     tweets = scraper.get_tweets(name, mode=modes, number=no)
-#     # Extract tweet data and store in a list of lists
-#     for tweet in tweets['tweets']:
-#         data = [tweet['link'], tweet['text'], tweet['date']]
-#         final_tweets.append(data)
-#     # Convert the list of lists into a DataFrame
-#     data = pd.DataFrame(final_tweets, columns= ['Link', 'Text', 'Date']) 
-#     return data
-
-# # Call the function to get tweets
-# data = get_tweets(user, 'user', 5)
-# print(data)
-
 
 from flask import Flask, render_template, request, redirect, url_for
 import snscrape.modules.twitter as tw
