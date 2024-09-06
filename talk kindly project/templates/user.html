@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='user.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>User Info</h1>
+        <!-- Banner image <header class="banner"> <img src="{{ profile_image_banner_url }}" alt="Banner Image">-->   
+        <div class="profile">
+            <img class="profile-image" src="{{ profile_image_url }}" alt="Profile Image">
+            <div class="user-info">
+                <p class="username">Username: @{{  user.username }}</p>
+                <p class="displayname">Name: {{ user.displayname }}</p>
+                <p class="followers">Followers: {{ user.followersCount }}</p>
+                <p class="following">Following: {{ user.friendsCount }}</p>
+                <p class="tweets">Tweets: {{ user.statusesCount }}</p>
+                <p class="location">Location: {{ user.location }}</p>
+                <p class="biography">Biography: {{ user.description }}</p>
+            </div>
+        </div>
+        <!-- Back button -->
+        <button onclick="goBack()">Back</button>
+        <!-- Continue button -->
+        <button onclick="continueToRoute()">Continue</button>
+    </div>
+
+    <script>
+        // JavaScript function to navigate back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+
+        // JavaScript function to redirect to a different route
+        function continueToRoute() {
+            window.location.href = "{{ url_for('index_find') }}"; // Replace 'other_route' with the desired route
+        }
+    </script>
+</body>
+</html>

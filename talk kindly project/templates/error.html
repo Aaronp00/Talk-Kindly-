@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cee3f8; /* Light blue background */
+            color: #000; /* Black text */
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff; /* White container background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff4500; /* Reddit orange */
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            background-color: #ff6347; /* Tomato red */
+            color: #fff; /* White text */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .back-button {
+    position: fixed;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    background-color: #ff4500; /* Reddit orange */
+    color: white;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Error</h1>
+        <div class="error-message">
+            <p>{{ error_message }}</p>
+        </div>
+    </div>
+    <button class="back-button" onclick="window.location.href = '//localhost:5000/';">HOME</button>
+</body>
+</html>

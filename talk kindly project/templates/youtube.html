@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Comments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='youtube.css') }}">
+</head>
+</head>
+</div>
+<!-- Back button -->
+<button onclick="goBack()" style="border: 1px solid black;">Back</button>
+
+<script>
+    // JavaScript function to navigate back to the previous page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <h1>Enter YouTube Video URL</h1>
+    <form action="/youtube_results" method="post">
+        <label for="youtube_url">YouTube URL:</label><br>
+        <input type="text" id="youtube_url" name="youtube_url" required><br>
+        <input type="submit" value="Get Comments">
+    </form>
+</body>
+</html
+

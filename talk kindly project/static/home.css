@@ -1,0 +1,179 @@
+/* The styles to do with the background colour and middle section */
+body {
+    background-color: #dbe1e9; 
+    background-image: linear-gradient(to bottom right, #a6ceef, #e9ecf0); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+
+/* Big button styles   ---- twitter --- */
+.big-button {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; /* margin to create space between buttons */
+}
+
+.big-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*  Big button styles -- youtube -- */
+.big-button2 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ac/Logo_youtube_ios_%28cropped%29.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px; /* margin to create space between buttons */
+}
+.big-button2:hover {
+    background-color: #0056b3;
+}
+
+/* Adjusted Big button styles --- reddit -- */
+.big-button3 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    background-image: url('https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png');
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px; 
+}
+
+.big-button3:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* The date adjustment  */
+.datetime {
+    position: fixed;
+    bottom: 10px; 
+    right: 10px; 
+    color: #333; 
+    font-size: 15px; 
+    font-family: Arial, sans-serif;
+}
+
+/* Title logo adjustment  */
+.top-left-text {
+    position: fixed;
+    top: 10px; 
+    left: 10px;
+    color: #333; 
+    font-size: 36px; 
+    font-weight: bold; 
+    font-family: Georgia, serif;
+    
+}
+
+
+/* how to use home page ajustments */
+.use-form {
+    position: fixed;
+    bottom: 95px; 
+    left: 10px; 
+    font-size: 15px; 
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Contact us  home page ajustments  */
+.contact-link {
+    position: fixed; 
+    bottom: 65px; 
+    color: #333;
+   font-size: 15px; 
+   left: 10px; 
+   font-family: Arial, sans-serif;
+}
+    
+/* about us home page ajustments  */
+.about-form {
+    position: fixed;
+    bottom: 35px; 
+    left: 10px; 
+    font-size: 15px; 
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+
+/* email request home page ajustments  */
+.email-form {
+    position: fixed; 
+    bottom: 8px; 
+    left: 1%;
+    color: #333;
+    font-size: 15px; 
+    text-align: left;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+/* bottom trademark home page ajustments  */
+.Trade-mark {
+    color: #2926847b;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}

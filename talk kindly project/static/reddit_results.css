@@ -1,0 +1,65 @@
+/* reddit.css */
+
+body {
+    background-color: #cee3f8; /* Light blue background similar to Reddit */
+    color: #1a1a1b; /* Reddit text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: #ff4500; /* Reddit orange */
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove default list styling */
+}
+
+
+li {
+
+    background-color: #fff; /* White */
+    border: 1px solid #ccc; /* Light gray */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+}
+
+
+
+a {
+    color: #1a1a1b; /* Reddit text color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0079d3; /* Reddit blue on hover */
+}
+
+strong {
+    color: #ff4500; /* Reddit orange */
+}
+
+
+.back-button {
+    position: fixed;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    background-color: #ff4500; /* Reddit orange */
+    color: white;
+    cursor: pointer;
+}
+
+

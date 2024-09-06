@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='email.css') }}">
+</head>
+<!-- Back button -->
+<button onclick="goBack()" style="border: 1px solid black;">Back</button>
+
+<script>
+    // JavaScript function to navigate back to the previous page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <div class="container">
+        <h1>Request Form </h1>
+        <form action="{{ url_for('send_email') }}" method="post">
+            <label for="body">Please provide the word or phrase that you believe should be included in the monitoring system as inappropriate:</label><br>
+            <textarea id="email_body" name="email_body" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Send Email">
+        </form>
+    </div>
+</body>
+</html>

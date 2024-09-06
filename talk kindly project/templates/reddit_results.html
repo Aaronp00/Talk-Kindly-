@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Reddit Posts in /r/{{ subreddit }}</title> <!-- Removed class="header" -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='reddit_results.css') }}">
+</head>
+<body>
+    <h1 class="header">Top Reddit Posts in /r/{{ subreddit }}</h1>
+    {% for post in top_posts %}
+    <ul>
+         <li>
+            <strong>Author:</strong> <a>{{ post.author }}</a><br>
+            <strong>Number Of Comments :</strong> <a>{{ post.num_comments}}</a><br>
+        <strong>Post:</strong> <a href="{{ post.url }}">{{ post.title }}</a><br>
+          <!--  <a href=>Author: {{post.author}}</a>
+            <a href=>Subbreddit post:</a>"{{ post.url }}">"{{ post.title }}"</a>
+             Check if post has inappropriate words and display appropriate message -->
+            {% if post.has_inappropriate_words %}
+                <span style="color: red;"> * Post Flagged for inappropriate content * </span>
+            {% else %}
+                <span style="color: green;"> - No inappropriate content in Post -</span>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    <!-- Add a button to go back to the home page -->
+    <button class="back-button" onclick="window.location.href = '//localhost:5000/';">HOME</button>
+</body>
+</html>

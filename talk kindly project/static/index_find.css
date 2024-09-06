@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15202b; /* Twitter dark mode background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #192734; /* Darker container background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Shadow effect */
+}
+
+h1 {
+    color: #1da1f2; /* Twitter blue */
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #1da1f2; /* Twitter blue button background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0d8aff; /* Darker blue on hover */
+}

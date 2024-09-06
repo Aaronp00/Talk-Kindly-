@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='About_us.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>At Talk Kindly, our mission is to create a more safe and positive online environment in order to transform social media interactions. Our goal is to develop an advanced monitoring system that can identify and assist in inappropriate conversations, encouraging civil discourse and limiting the exposure of harmful content. With the help of our project, we hope to create a more compassionate and understanding world where people utilise the internet in a safer and more welcoming manner.</p>
+        </section>
+        <section>
+            <h2>Current Added Social Media Platforms</h2>
+            <p>X- A free social networking site where users broadcast short posts known as tweets. </p>
+            <p>Reddit- A social news website and forum where content is socially curated and promoted by site members through voting.</p>
+            <p>YouTube- A popular video sharing website where registered users can upload and share videos with anyone able to access the site. </p>
+        </section> 
+        <section>
+            <h2>Our Team</h2>
+            <ul>
+            <li>Aaron Patterson - CEO</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Talk Kindly</p>
+    </footer>
+<a href="{{ url_for('home') }}" class="return-home">Return to Home</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray */
+    color: #333; /* Dark gray */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff0000; /* YouTube red */
+    text-align: center;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #fff; /* White */
+    border: 1px solid #ccc; /* Light gray */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+}
+
+strong {
+    color: #ff0000; /* YouTube red */
+}
+
+.back-button {
+    position: fixed;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    background-color: #ff4500; /* Reddit orange */
+    color: white;
+    cursor: pointer;
+}

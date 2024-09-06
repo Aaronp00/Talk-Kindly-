@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Top 500 Reddit Posts</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='reddit.css') }}">
+       
+    </head>
+</head>
+<body>
+    <h1>Top 500 Reddit Posts</h1>
+    <form action="/reddit_results" method="GET" onsubmit="return validateForm()">
+        <label for="subreddit">Enter Subreddit Name:</label>
+        <input type="text" id="subreddit" name="subreddit">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Back button -->
+    <button onclick="goBack()" style="border: 1px solid black;">Back</button>
+
+    <script>
+        // JavaScript function to navigate back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+
+        // JavaScript function to validate form before submission
+        function validateForm() {
+            var subredditInput = document.getElementById("subreddit").value;
+            if (subredditInput.trim() === "") {
+                alert("Please enter a subreddit name.");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>

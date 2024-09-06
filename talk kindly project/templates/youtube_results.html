@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Comments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='youtube_results.css') }}">
+</head>
+<body>
+    <h1>YouTube Comments</h1>
+    <ul>
+        {% for comment in comments %}
+            <li>
+                
+                <strong>Author: </strong><a href="https://www.youtube.com/channel/{{ comment['author_channel_id'] }}" target="_blank">{{ comment['author_display_name'] }}</a><br>
+                <strong>Published At: </strong>{{ comment['published_at'] }}<br>
+                <strong>Comment: </strong>{{ comment['text_original'] }}<br>
+                <strong>Public: </strong>{{ comment['public'] }}<br>
+                <!-- The display of profanity -->
+                {% if comment['contains_inappropriate_words'] %}
+                    <span style="color: red;"> * Comment Flagged for inappropriate content * </span>
+                {% else %}
+                    <span style="color: green;"> - No inappropriate content in Comment -</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    <!-- Back button -->
+    <button class="back-button" onclick="window.location.href = '/';">HOME</button>
+</body>
+</html>
+

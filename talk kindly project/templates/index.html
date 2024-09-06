@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter User Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+</div>
+<!-- Back button -->
+<button onclick="goBack()" style="border: 1px solid black;">Back</button>
+
+<script>
+    // JavaScript function to navigate back to the previous page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <div class="container">
+        <h1>Enter a Twitter(X) username:</h1>
+        <form action="/user" method="post">
+            <input type="text" name="username" placeholder="Enter username" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   
+</body>
+</html>

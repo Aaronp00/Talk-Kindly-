@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Options</title>
+
+    <!-- Linking to the the HTML to the css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Monitoring Options</h1>
+        <p>Please select a social media platform to monitor for inappropriate language:</p>
+        <ul>
+            <!-- the big button for twitter -->
+            <hl><a href="{{ url_for('index') }}" class="big-button"></a></hl>
+
+            <!-- the big button for youtube -->
+            <hl><a href="{{ url_for('Youtube') }}" class=" big-button2"></a></hl>
+
+            <!-- the big button for reddit -->
+            <hl><a href="{{ url_for('reddit') }}" class=" big-button3"></a></hl>
+    
+            <!-- Add more social media options here -->
+        </ul>
+
+        <!-- The display of  current date and time -->
+        <div class="datetime">
+            <p>Current Date: <span id="current-date"></span></p>
+            <p>Current Time: <span id="current-time"></span></p>
+        </div>
+
+        <!-- Logo  -->
+        <div class="top-left-text">
+            Talk Kindly
+        </div>
+        <!-- our trade mark -->
+        <div class="Trade-mark">
+            <p>&copy; 2024 Talk Kindly</p>
+           </div>
+            <!-- bottom left -->
+
+            <!-- how to use redirect -->
+            <div class="use-form">
+                <p><a href="{{ url_for('Use_us') }}"class="use-form">How to use</a></p>
+            </div>
+
+           <!-- email request redirect -->
+            <div class="email-form">
+                <p><a href="{{ url_for('send_email') }}"class="email-form">Request An Inappropriate Word</a></p>
+            </div>
+
+            <!-- about us redirect -->
+            <div class="about-form">
+                <p><a href="{{ url_for('About_us') }}"class="about-form">About Us</a></p>
+            </div>
+            
+            <!--contact us redirect  -->
+            <div>
+                <p><a href="mailto:talk.kindly24@gmail.com" class="contact-link">Contact Us</a></p>
+            </div>
+    </div>
+    <script>
+        function updateDateTime() {
+            // Geting the current date and time
+            var now = new Date();
+            var date = now.toLocaleDateString('en-GB'); // Format date as DD/MM/YYYY
+            var time = now.toLocaleTimeString('en-GB', {hour12: false}); // Format time as 24-hour HH:MM:SS
+            // The Update HTML for current date and time
+            document.getElementById('current-date').textContent = date;
+            document.getElementById('current-time').textContent = time;
+        }
+
+        // Calling  the updateDateTime function to display current date and time
+        updateDateTime();
+        // Refreshing date and time every second
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>
+
+

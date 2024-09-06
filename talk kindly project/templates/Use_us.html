@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Use_us.css') }}">
+</head>
+<body>
+    <header>
+        <h1>How to use our product</h1>
+    </header>
+    <main>
+        <section>
+            <h2>How to use</h2>
+            <p><strong>Twitter:</strong></p>
+            <p>STEP 1: Enter any username into the  searchbar then continue .</p>
+            <p>STEP 2: View all recent tweets from that username.(Tweets will then be flagged as inappropriate or not)</p>
+
+            <p><strong>Reddit:</strong></p>
+            <p>STEP 1: Enter any subreddit name into the searchbar.</p>
+            <p>STEP 2: See the top subreddits matching the name.(subreddits will then be flagged as inappropriate or not)</p>
+
+            <p><strong>YouTube:</strong></p>
+            <p>STEP 1: Search for a YouTube vidYouTube and then copy the URL.</p>
+            <p>STEP 2: Once you got thr URL, paste it into searchbar and then submit.</p>
+            <p>STEP 3: View all comments from that video.(Comments will then be flagged as inappropriate or not)</p>
+        </section> 
+    
+    </main>
+    <footer>
+        <p>&copy; 2024 Talk Kindly</p>
+    </footer>
+<a href="{{ url_for('home') }}" class="return-home">Return to Home</a>
+</body>
+</html>
